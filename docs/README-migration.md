@@ -2134,7 +2134,7 @@ SDL_CreateWindow() has been simplified and no longer takes a window position. Yo
     SDL_SetNumberProperty(props, SDL_PROP_WINDOW_CREATE_Y_NUMBER, y);
     SDL_SetNumberProperty(props, SDL_PROP_WINDOW_CREATE_WIDTH_NUMBER, width);
     SDL_SetNumberProperty(props, SDL_PROP_WINDOW_CREATE_HEIGHT_NUMBER, height);
-    SDL_SetNumberProperty(props, "flags", flags);
+    SDL_SetNumberProperty(props, SDL_PROP_WINDOW_CREATE_FLAGS_NUMBER, flags);
     pWindow = SDL_CreateWindowWithProperties(props);
     SDL_DestroyProperties(props);
     if (window) {
